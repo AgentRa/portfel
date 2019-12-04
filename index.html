@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="swiper/swiper.scss">
+  <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="style.css" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    <img src="./assets/img/ava.png" alt="avatar" class="header__avatar">
+    <ul class="header__list list">
+      <li class="list__name">Aliaksandr Razhachkin</li>
+      <li class="list__git"><a href="https://github.com/AgentRa">Github</a></li>
+      <li class="list__links"><a href="https://www.linkedin.com/in/aliaksandr-razhachkin-17a7bb198/">LinkedIn</a> /
+        <a href="https://www.facebook.com/profile.php?id=100005580816730">Facebook</a>
+      </li>
+    </ul>
+  </header>
+  <main class="main">
+    <section class="main__edu edu">
+      <button class="edu__collapsible">
+        <h2>Education</h2>
+        <img src="./assets/img/angle-down-solid.svg" alt="down">
+      </button>
+      <ul class="edu__content">
+        <li>School: <b>2000 - 2011</b></li>
+        <li>University: BSU faculty of radiophysics and computer technologies <b>2011 - 2017</b></li>
+        <li>RSSchool Courses <b>2019 - 2020</b></li>
+      </ul>
+    </section>
+    <section class="main__projects projects">
+      <h2 class="projects__title">Projects</h2>
+      <script src="swiper/js/swiper.js"></script>
+      <div class="swiper-container">
+        <div class="swiper-button-prev">
+          <img src="./assets/img/angle-left-solid.svg" alt="prev">
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a href="projects/TheYalow/index.html">
+              <img src="./assets/img/theyalow.png" alt="Yalow" >
+            </a>
+            <div class="swiper-slide__desc desc">
+              <button class="desc__collapsible">
+                <h3>Show Description</h3>
+              </button>
+              <div class="desc__content">
+                <p>
+                  Web Page
+                  Difficulty Level 1
+                </p>
+                <p>Now I know how to use Fonts</p>
+                <p>Now I know how to use Pixel Perfect</p>
+                <p>Now I know how to use Flexbox</p>
+              </div>
+              <div class="desc__swipe">
+                <p>Swipe to see other</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="projects/RepairDesign/index.html">
+              <img src="./assets/img/repair.png" alt="Repair">
+            </a>
+            <div class="swiper-slide__desc desc" id="desc">
+              <button class="desc__collapsible">
+                <h3>Show Description</h3>
+              </button>
+              <div class="desc__content">
+                <p>
+                  Web Page
+                  Difficulty Level 3
+                </p>
+                <p>Now I know how to use media queries</p>
+                <p>Now I know how to use SCSS</p>
+                <p>Now I know how to use Webpack</p>
+                <p>Now I know how to use Forms</p>
+              </div>
+              <div class="desc__swipe">
+                <p>Swipe to see other</p>
+              </div>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-next">
+          <img src="./assets/img/angle-right-solid.svg" alt="next">
+        </div>
+      </div>
+    </section>
+  </main>
+<script type="text/javascript" src="script.js"></script></body>
+</html>

@@ -1,2 +1,0 @@
-# portfel
-Portfolio task
